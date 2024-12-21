@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('author');
             $table->string('category');
-            $table->integer('year');
-            $table->integer('quantity');
+            $table->integer('year')->nullable();
+            $table->integer('quantity')->nullable();
             $table->timestamps();
         });
     }

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->timestamps();
 
             //định nghĩa các ràng buộc khóa ngoại (foreign key constraints)
-            $table->foreign('reader_id')->references('id') >on('readers');
+            $table->foreign('reader_id')->references('id') ->on('readers');
             $table->foreign('book_id')->references('id')->on('books');
         });
     }
